@@ -2,7 +2,7 @@
  * @Author: Mecora i_akio@126.com
  * @Date: 2024-02-29 23:12:39
  * @LastEditors: Mecora i_akio@126.com
- * @LastEditTime: 2024-03-01 21:47:16
+ * @LastEditTime: 2024-03-01 23:37:57
  * @FilePath: /GitFish123.github.io/docs/.vuepress/config.js
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -14,10 +14,11 @@ module.exports = defineConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "Mecora 小飞鱼",
+      title: "Mecora 知识空间",
       description: "anything",
     },
   },
+  base: '/main/',
   themeConfig: {
     logo: "/image/theme.jpeg",
     repo: "https://github.com/GitFish123/GitFish123.github.io", // github 地址
@@ -26,8 +27,9 @@ module.exports = defineConfig({
     lastUpdated: "最后更新时间", // 最后更新时间
     prevLinks: true, // 上一篇 链接
     nextLinks: true, // 下一篇 链接
-    // smoothScroll: true, // 启用页面滚动效果
-    // docsDir: 'docs',
+    smoothScroll: true, // 点击页面内部的链接时，触发平滑滚动效果
+    docsDir: 'docs', // 指定包含Markdown文件的目录
+    displayAllHeaders: true, // 是否显示所有标题的链接，默认值：false
     nav: [
       { text: "首页", link: "/index.md" },
       {
@@ -38,24 +40,53 @@ module.exports = defineConfig({
           { text: "文章", link: "/article/index.md" },
         ],
       },
-      // { text: "Node生态", link: "/index.md" },
-      // { text: "计算机网络", link: "/index.md" },
-      // { text: "算法与设计模式", link: "/index.md" },
     ],
-    displayAllHeaders: true, // 默认值：false
     sidebar: [
-      // {
-      //   title: "前端",
-      //   children: [
-      //     { title: "React", path: "/React/react.md" },
-      //     { title: "Vue", path: "/Vue/index.md" },
-      //     { title: "文章", path: "/article/index.md" },
-      //   ],
-      // },
-      // {
-      //   title: "计算机网络",
-      // }
+      {
+        title: "前端",
+        children: [
+          { 
+            title: "React", 
+            path: "/main/React/react.md" 
+          },
+          { 
+            title: "Vue", 
+            path: "/Vue/vue.md" 
+          },
+          { 
+            title: "文章", 
+            path: "/article/article.md" 
+          },
+        ],
+      },
     ],
+    sidebar: [
+      {
+        title: '前端',   // 必要的
+        // path: '/',  // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+        collapsable: true, // 可选的, 默认值是 true,
+        sidebarDepth: 6,    // 可选的, 默认值是 1
+        children: [
+          {
+            title: 'React',
+            path: '/React/react.md'
+          },
+          {
+            title: 'Vue',
+            path: '/Vue/vue.md' 
+          },
+          {
+            title: '文章',
+            path: '/Article/article.md' 
+          },
+        ]
+      },
+      // {
+      //   title: '计算机网络',
+      //   children: [ /* ... */ ],
+      //   initialOpenGroupIndex: 0 // 可选的, 默认值是 0，默认展开第一个侧边栏组
+      // }
+    ]
   },
   markdown: {
     lineNumbers: true, // 代码块显示行号
