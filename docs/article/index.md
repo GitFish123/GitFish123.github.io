@@ -2,7 +2,7 @@
  * @Author: Mecora i_akio@126.com
  * @Date: 2024-03-01 12:14:30
  * @LastEditors: Mecora i_akio@126.com
- * @LastEditTime: 2024-03-01 13:21:11
+ * @LastEditTime: 2024-03-01 17:26:57
  * @FilePath: /GitFish123.github.io/docs/.vuepress/article/index.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -13,7 +13,7 @@
   目前 [Antd Pagination](https://ant-design.antgroup.com/components/pagination-cn)中pageSizeOptions的`分页/条`默认值为`[10, 20, 50, 100]`，在属性中先定义再使用，但这种操作不够灵活或者说可以进一步扩展。如果想要在表格中进行自定义输入任意想要的每页条数，则目前这种默认的定义配置方式是不能实现的。查看源码 [react-component/pagination](https://github.com/react-component/pagination/blob/master/src/Options.tsx)后发现名，可以通过对`selectComponentClass`属性进行重写实现，因此基于以上情况的考虑，对`Antd Pagination`组件进行了简单的扩展，支持自定义的输入每页条数。此外还可以对输入的内容进行合法性校验。
 
 #### 定义自定义组件
-```javascript
+```js
   import { Input, message, Select } from 'antd';
   import React, { useState, Fragment } from 'react';
 
@@ -80,7 +80,7 @@
 ```
 
 #### 基于Table 进行封装
-```javascript
+```js {2,20}
   import React from 'react';
   import CustomPagination from '@/components/CustomPagination'
 
@@ -117,7 +117,7 @@
 ```
 
 #### 使用
-```javascript
+```js 
   import React from 'react';
 
   const CustomTable: React.FC = () => (
@@ -129,6 +129,6 @@
   );
 ```
 
-#### 最终实效的效果，如下：
+#### 最终实效的效果，如下:
 <br />
 <img src="/image/custom_pagination.jpg" alt="自定义输入分页条数" height='200'>
