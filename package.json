@@ -12,6 +12,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@vuepress/plugin-active-header-links": "^1.9.10",
+    "@vuepress/plugin-back-to-top": "^1.9.10",
+    "@vuepress/plugin-nprogress": "^1.9.10",
     "vuepress": "^1.9.10"
   }
 }

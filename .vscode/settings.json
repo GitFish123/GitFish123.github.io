@@ -3,6 +3,7 @@
     "antd",
     "gitfish",
     "Mecora",
+    "nprogress",
     "vuepress"
   ]
 }
