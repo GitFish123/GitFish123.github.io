@@ -17,6 +17,9 @@ devDependencies:
   vuepress:
     specifier: ^1.9.10
     version: 1.9.10
+  vuepress-plugin-nprogress:
+    specifier: ^1.1.8
+    version: 1.1.8
   vuepress-plugin-one-click-copy:
     specifier: ^1.0.6
     version: 1.0.6
@@ -9062,6 +9065,12 @@ packages:
       markdown-it-container: 2.0.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /vuepress-plugin-nprogress@1.1.8:
+    resolution: {integrity: sha512-MCM6/TN/klljh5s5pso1YM3XR89BQ1yOPyYqrI8NG8u6f/w3tAa8wKhmle789yeC02WSXbcLE7t6VTRTOWst+A==}
+    dependencies:
+      nprogress: 0.2.0
     dev: true
 
   /vuepress-plugin-one-click-copy@1.0.6:
