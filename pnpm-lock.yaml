@@ -20,6 +20,9 @@ devDependencies:
   vuepress-plugin-one-click-copy:
     specifier: ^1.0.6
     version: 1.0.6
+  vuepress-plugin-zooming:
+    specifier: ^1.1.8
+    version: 1.1.8
 
 packages:
 
@@ -9071,6 +9074,12 @@ packages:
       smoothscroll-polyfill: 0.4.4
     dev: true
 
+  /vuepress-plugin-zooming@1.1.8:
+    resolution: {integrity: sha512-QAspMEqzerd0n8z/oOL5a67V/QaFZyjSwfo86y6PWhDdVAeOLR7umJ7syQqJpMdN9EVxmAstuzbKHkRxWzL0NQ==}
+    dependencies:
+      zooming: 2.1.1
+    dev: true
+
   /vuepress@1.9.10:
     resolution: {integrity: sha512-UnGm9vjQvG918SZVNvgiUlNimLqawdYPq0aPRXDpEB1VksvqegVFy/GKdA8ShXJaEpOMPSt7YD4uK21jaMs3kA==}
     engines: {node: '>=8.6'}
@@ -9480,4 +9489,8 @@ packages:
 
   /zepto@1.2.0:
     resolution: {integrity: sha512-C1x6lfvBICFTQIMgbt3JqMOno3VOtkWat/xEakLTOurskYIHPmzJrzd1e8BnmtdDVJlGuk5D+FxyCA8MPmkIyA==}
+    dev: true
+
+  /zooming@2.1.1:
+    resolution: {integrity: sha512-Z38dkZRQsFNBE67+xDBQLNKMs5J1Gc+s3/zO6iezTrC24VYLJV7YPBdBDJmiLhff5qa6Awxv4wsjqx3oYz2MYA==}
     dev: true
