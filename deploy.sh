@@ -9,7 +9,7 @@ push_address=https://github.com/GitFish123/GitFish123.github.io.git
 remote_branch=gh-pages
 
 # 生成静态文件
-npm run docs:build
+pnpm run docs:build
 
 # 进入生成的文件夹
 cd $dist_path

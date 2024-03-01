@@ -4,6 +4,7 @@
     "gitfish",
     "Mecora",
     "nprogress",
+    "preinstall",
     "vuepress"
   ]
 }
