@@ -14,10 +14,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@vuepress/bundler-vite": "2.0.0-rc.8",
     "@vuepress/plugin-active-header-links": "^1.9.10",
     "@vuepress/plugin-back-to-top": "^1.9.10",
     "@vuepress/plugin-nprogress": "^1.9.10",
-    "vuepress": "^1.9.10",
+    "@vuepress/plugin-search": "^1.9.10",
+    "@vuepress/theme-default": "2.0.0-rc.18",
+    "vue": "^3.4.21",
+    "vuepress": "2.0.0-rc.8",
     "vuepress-plugin-nprogress": "^1.1.8",
     "vuepress-plugin-one-click-copy": "^1.0.6",
     "vuepress-plugin-zooming": "^1.1.8"
