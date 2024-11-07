@@ -1,23 +1,21 @@
 ---
-title: 一个基于 dumi 生成的静态站点
+title: timer
 hero:
-  title: Site
-  description: 一个基于 dumi 生成的静态站点
+  title: growing up
+  description: 一个基于 dumi 生成的静态站点, 用于个人学习记录，持续更新中...
   actions:
-    - text: Hello
-      link: /
-    - text: World
-      link: /
+    - text: 开始使用
+      link: /guide
+    - text: 文件列表
+      link: /components
 features:
-  - title: Hello
+  - title: 大前端
     emoji: 💎
     description: Put hello description here
-  - title: World
+  - title: NodJS
     emoji: 🌈
     description: Put world description here
-  - title: '!'
+  - title: '脚手架'
     emoji: 🚀
     description: Put ! description here
 ---
-
-

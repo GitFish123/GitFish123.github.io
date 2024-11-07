@@ -1,9 +1,11 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
+  base: '/GitFish123.github.io',
+  publicPath: '/GitFish123.github.io/',
   themeConfig: {
     name: '时光的博客', // 配置导航栏上的站点名称，不配置时不展示
-    logo: '/logo.png', // 导航栏站点LOGO
+    // logo: '/logo.png', // 导航栏站点LOGO
     lastUpdated: true, // 最近更新时间
     rtl: true, // 是否开启 RTL 切换，用于将站点文本阅读方向切换为『从右到左』
     showLineNum: true, // 在代码块中展示行号
